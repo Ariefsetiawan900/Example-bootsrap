@@ -18,4 +18,9 @@ header {
     color: var(--info);
     text-align: center;
     padding-top: 10px;
+    font-size: 18px;
+}
+.social-rounded:hover{
+    background-color: var(--dark);
+    color: var(--light);
 }
