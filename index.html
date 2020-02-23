@@ -303,12 +303,13 @@
           </div>
         </div>
       </div>
+
       <!-- modal -->
       <div class="modal fade" id="daftar" tab-index="-1" aria-labelledby="daftarLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Form Pendaftaran</h5>
+            <h5 class="modal-title"></h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true"> &times; </span>
             </button>
@@ -317,7 +318,7 @@
             <form action="#">
               <div class="form-group">
                 <label for="paket" class="col-form-label">Paket</label>
-                <input type="text" class="form-control" id="nama-paket">
+                <input type="text" class="form-control" id="nama-paket" disabled>
               </div>
               <div class="form-group">
                 <label for="nama" class="col-form-label"> Nama Lengkap</label>
@@ -398,6 +399,17 @@
   <script src="js/jquery-3.4.1.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $('#daftar').on('show.bs.modal', function(event){
+      var button = $(event.relatedTarget);
+      var paket = button.data('paket'); //Basic, Medium, Profesional
+
+      var modal = $(this);
+      modal.find('modal-title').text('Form Pendaftaran paket '+paket);
+      modal.find('.modal-body #nama-paket').val(paket);
+    })
+  </script>
 </body>
 
 </html>
