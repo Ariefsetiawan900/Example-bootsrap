@@ -1,0 +1,9 @@
+.jumbotron {
+    min-height: 600px;
+    background: linear-gradient(to bottom, #2aa4b8, #7fcad645)
+}
+header {
+    background: url("../img/Awan.jpg");
+    background-size: cover;
+    background-position: 35%;
+}
