@@ -262,7 +262,7 @@
               </ul>
             </div>
             <div class="card-footer text-center bg-transparent">
-              <button class="btn btn-md btn-success">Daftar</button>
+              <button class="btn btn-md btn-success" data-toggle="modal" data-target="#daftar" data-paket="Basic">Daftar</button>
             </div>
           </div>
         </div>
@@ -280,7 +280,7 @@
               </ul>
             </div>
             <div class="card-footer text-center bg-transparent">
-              <button class="btn btn-md btn-warning">Daftar</button>
+              <button class="btn btn-md btn-warning" data-toggle="modal" data-target="#daftar" data-paket="Expert">Daftar</button>
             </div>
           </div>
         </div>
@@ -298,26 +298,44 @@
               </ul>
             </div>
             <div class="card-footer text-center bg-transparent">
-              <button class="btn btn-md btn-danger">Daftar</button>
+              <button class="btn btn-md btn-danger" data-toggle="modal" data-target="#daftar" data-paket="Profesional">Daftar</button>
             </div>
           </div>
         </div>
       </div>
       <!-- modal -->
-      <div class="modal fade" id="daftar" tab-index="1" aria-labelledby="daftarLabel" aria-hidden="true"></div>
+      <div class="modal fade" id="daftar" tab-index="-1" aria-labelledby="daftarLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-
+            <h5 class="modal-title">Form Pendaftaran</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"> &times; </span>
+            </button>
           </div>
           <div class="modal-body">
-
+            <form action="#">
+              <div class="form-group">
+                <label for="paket" class="col-form-label">Paket</label>
+                <input type="text" class="form-control" id="nama-paket">
+              </div>
+              <div class="form-group">
+                <label for="nama" class="col-form-label"> Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama">
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
-            
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+            <button type="submit" class="btn btn-info">Daftar</button>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
