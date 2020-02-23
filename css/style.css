@@ -7,3 +7,6 @@ header {
     background-size: cover;
     background-position: 35%;
 }
+.col-service{
+    min-height: 220px;
+}
