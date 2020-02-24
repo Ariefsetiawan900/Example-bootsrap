@@ -11,7 +11,8 @@
   <!-- external CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- font awesome -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <title>Company profile</title>
 
@@ -41,16 +42,16 @@
             <a href="#about" class="nav-link">About Us</a>
           </li>
           <li class="nav-item mr-3">
-            <a href="#home" class="nav-link">Services</a>
+            <a href="#service" class="nav-link">Services</a>
           </li>
           <li class="nav-item mr-3">
-            <a href="#about" class="nav-link">Portofolio</a>
+            <a href="#portofolio" class="nav-link">Portofolio</a>
           </li>
           <li class="nav-item mr-3">
-            <a href="#home" class="nav-link">Paket</a>
+            <a href="#paket" class="nav-link">Paket</a>
           </li>
           <li class="nav-item mr-3">
-            <a href="#about" class="nav-link">Kontak</a>
+            <a href="#kontak" class="nav-link">Kontak</a>
           </li>
         </ul>
       </div>
@@ -60,7 +61,7 @@
   </nav>
 
   <!-- jumbotron IMgae -->
-  <header>
+  <header id="home">
     <div class="jumbotron jumbotron-fluid">
       <div class="container text-center mt-5">
         <h1 class="display-4 text-white mt-5 pt-5 pb-5"> Belajar coding online</h1>
@@ -72,7 +73,7 @@
   <!-- about us -->
   <section id="about" class="bg-white">
     <div class="container">
-      <h2 class="text-info text-center display-4">About us</h2>
+      <h2 class="text-info text-center display-4 mb-5">About us</h2>
       <div class="row">
         <div class="col-md-6 text-center">
           <img src="img/lol.jpg" alt="photo dummy" class="img-fluid" style="max-height: 200px;">
@@ -90,7 +91,7 @@
   </section>
 
   <!-- service -->
-  <section id="service" class="bg-light py-5">
+  <section id="service" class="bg-light py-5 mb-5">
     <div class="container">
       <h2 class="display-4 text-info text-center">Our Services</h2>
       <div class="row">
@@ -158,7 +159,7 @@
   <section id="portofolio" class="bg-white py-5">
 
     <div class="container">
-      <h2 class="display-4 text-info text-center">Portofolio</h2>
+      <h2 class="display-4 text-info text-center mb-5">Portofolio</h2>
       <div class="row text-center">
         <div class="col-lg-4 col-md-6 col-sm 12 mb-3">
           <div class="card">
@@ -246,7 +247,7 @@
   <!-- paket modul -->
   <section id="paket" class="bg-white py-5">
     <div class="container">
-      <h2 class="display-4 text-info text-center">Paket Modul</h2>
+      <h2 class="display-4 text-info text-center mb-5">Paket Modul</h2>
       <div class="row">
         <!-- paket 1 -->
         <div class="col-lg-4 col-md-4 col-sm-12">
@@ -262,7 +263,8 @@
               </ul>
             </div>
             <div class="card-footer text-center bg-transparent">
-              <button class="btn btn-md btn-success" data-toggle="modal" data-target="#daftar" data-paket="Basic">Daftar</button>
+              <button class="btn btn-md btn-success" data-toggle="modal" data-target="#daftar"
+                data-paket="Basic">Daftar</button>
             </div>
           </div>
         </div>
@@ -280,7 +282,8 @@
               </ul>
             </div>
             <div class="card-footer text-center bg-transparent">
-              <button class="btn btn-md btn-warning" data-toggle="modal" data-target="#daftar" data-paket="Expert">Daftar</button>
+              <button class="btn btn-md btn-warning" data-toggle="modal" data-target="#daftar"
+                data-paket="Expert">Daftar</button>
             </div>
           </div>
         </div>
@@ -298,7 +301,8 @@
               </ul>
             </div>
             <div class="card-footer text-center bg-transparent">
-              <button class="btn btn-md btn-danger" data-toggle="modal" data-target="#daftar" data-paket="Profesional">Daftar</button>
+              <button class="btn btn-md btn-danger" data-toggle="modal" data-target="#daftar"
+                data-paket="Profesional">Daftar</button>
             </div>
           </div>
         </div>
@@ -306,37 +310,37 @@
 
       <!-- modal -->
       <div class="modal fade" id="daftar" tab-index="-1" aria-labelledby="daftarLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title"></h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true"> &times; </span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="#">
-              <div class="form-group">
-                <label for="paket" class="col-form-label">Paket</label>
-                <input type="text" class="form-control" id="nama-paket" disabled>
-              </div>
-              <div class="form-group">
-                <label for="nama" class="col-form-label"> Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama">
-              </div>
-              <div class="form-group">
-                <label for="email" class="col-form-label">Email</label>
-                <input type="email" class="form-control" id="email">
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-            <button type="submit" class="btn btn-info">Daftar</button>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"> &times; </span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="form-group">
+                  <label for="paket" class="col-form-label">Paket</label>
+                  <input type="text" class="form-control" id="nama-paket" disabled>
+                </div>
+                <div class="form-group">
+                  <label for="nama" class="col-form-label"> Nama Lengkap</label>
+                  <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="form-group">
+                  <label for="email" class="col-form-label">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+              <button type="submit" class="btn btn-info">Daftar</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -366,29 +370,29 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <ul class="list-inline">
-          <li class="list-inline-item">
-          <a href="https://facebook.com" target="_blank">
-            <div class="social-rounded">
-              <i class="fab fa-facebook-f"></i>
-            </div>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://instagram.com" target="_blank">
-            <div class="social-rounded">
-              <i class="fab fa-instagram"></i>
-            </div>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://twitter.com" target="_blank">
-            <div class="social-rounded">
-              <i class="fab fa-twitter"></i>
-            </div>
-          </a>
-        </li>
-      </ul>
-      <h5 class="lead text-white">Made width &hearts; by : Ariefsetiawan900</h5>
+            <li class="list-inline-item">
+              <a href="https://facebook.com" target="_blank">
+                <div class="social-rounded">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://instagram.com" target="_blank">
+                <div class="social-rounded">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com" target="_blank">
+                <div class="social-rounded">
+                  <i class="fab fa-twitter"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <h5 class="lead text-white">Made width &hearts; by : Ariefsetiawan900</h5>
         </div>
       </div>
     </div>
@@ -399,22 +403,6 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
-  <script>
-    $('#daftar').on('show.bs.modal', function(event){
-      var button = $(event.relatedTarget);
-      var paket = button.data('paket'); //Basic, Medium, Profesional
-
-      var modal = $(this);
-      modal.find('modal-title').text('Form Pendaftaran paket '+paket);
-      modal.find('.modal-body #nama-paket').val(paket);
-    })
-  </script>
-  <script>
-    $(function(){
-      $('')
-    })
-  </script>
-</body>
+  <script src="js/custom.js"></script>
 
 </html>
